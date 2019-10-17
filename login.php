@@ -7,24 +7,25 @@
     <title>[AppTrac] Sign in</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body id = "login">
+<body>
     <h2>Sign in to view your applications.</h2>
-    <form name = "SignInForm" action="logging.php" method = "POST">
-        <h3 class = 'center'>Sign in to access files</h3>
-        <p class = "left">
-            <label for="id">| Account >: </label> 
-            <input type = 'text' name = "id">
-        </p>
-        <p class = "left">
-            <label for="pw">| Password >: </label> > 
-            <input type = 'text' name = "pw">
-        </p>
-        <p class = "right">
-            <input type = "submit" value = "Sign In">
-        </p>
-        <p class = "right">
-            <label for = "signup">If you don't have an account > </label><input type = "button" value = "Sign Up" onclick = "window.location='signup.php';">
-        </p>
-    </form>
+    <form class="form-container" action="logging.php" method="POST">
+            <a class="link" href="index.php"><h1 class="title">[AppTrac] Sign in</h1></a>
+            <div class="grid">
+                <label class="input-label" for="username">Username:</label>
+                <input class="text-input" type="text" name="username" id="username" />
+                <label class="input-label"  for="username">Password:</label>
+                <input class="text-input" type="password" name="password" id="password" />
+            </div>
+            <input class="button" type="submit" value="LOGIN" />
+            <a class="button" href="signup.php">SIGN UP</a>
+            <?php if (!empty($_GET['error'])): 
+            //simple login form, print if errored.
+            ?>
+            <div class="error">
+                <?=htmlspecialchars($_GET['error']);?>
+            </div>
+            <?php endif;?>
+        </form>
 </body>
 </html>
