@@ -16,7 +16,7 @@ if(!preg_match("/^[\w_\-]+$/", $_POST["password"])){
     exit();
 }
 require 'sqlaccess.php';
-$stmt = $mysqli->prepare("SELECT * FROM users WHERE user_id = ?");
+$stmt = $mysqli->prepare("SELECT * FROM USERS WHERE user_id = ?");
 $stmt->bind_param("s", $_POST["username"]);
 $stmt->execute();
 $result = $stmt->get_result();
