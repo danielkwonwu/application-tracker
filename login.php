@@ -23,7 +23,7 @@
             <input type = "submit" value = "Sign In">
         </p>
         <p class = "right">
-            <label for = "signup">If you don't have an account > </label><input type = "button" value = "Sign Up" onclick = "window.location='fileSiteSignUpForm.php';">
+            <label for = "signup">If you don't have an account > </label><input type = "button" value = "Sign Up" onclick = "window.location='signup.php';">
         </p>
     </form>
 </body>
