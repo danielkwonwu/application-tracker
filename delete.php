@@ -13,15 +13,15 @@ if(!hash_equals($_SESSION["token"], $_POST["token"])){
 }
 //validates the post inputs and submits the contents to the database
 require('sqlaccess.php');
-$stmt = $mysqli->prepare("SELECT * FROM APPS JOIN USERS WHERE APPS.owner_key = USERS.user_key AND app_key = ?");
-$stmt->bind_param("i", $article);
+$stmt = $mysqli->prepare("SELECT * FROM USERS JOIN APPS WHERE APPS.owner_key = USERS.user_key AND user_id = ?");
+$stmt->bind_param("s", $_SESSION["user_id"]);
 $stmt->execute();
 $result = $stmt->get_result();
 $owner = false;
-if ($result->num_rows == 1)
+while ($row = $result->fetch_assoc())
 {
-    $row = $result->fetch_assoc();
-    if ($row["USERS.user_id"] == $_SESSION["user_id"] ){
+    if ($row["app_key"] == $article)
+    {
         $owner = true;
     }
 }
