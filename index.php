@@ -23,13 +23,15 @@
                 <a class="right button" href="post.php">Add Application</a>
                 <?php 
                 else: ?>
-                <p class="welcome">Sign in to view your apps.</p>
-                <a class="button" href="login.php">Sign In</a>
+                <p class="welcome"><a class="button" href="login.php">Sign In</a> to view your apps.</p>
                 <?php endif; ?>
             </div>
         </div>
         <div class="content">
             <?php
+            if (isset($_SESSION['user_id'])): ?>
+            <img src = "career.jpg">
+            <?php endif;
             require('sqlaccess.php');
             $stmt = $mysqli->prepare("SELECT * FROM APPS JOIN USERS WHERE (USERS.user_key = APPS.owner_key) AND USERS.user_id = ? ORDER BY (APPS.time) ASC");
             $stmt->bind_param("s", $_SESSION["user_id"]);
