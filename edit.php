@@ -73,7 +73,7 @@ if (!$owner){
                     <label class="input-label" for="notes">Notes:</label><br>
                     <textarea form="apps" rows="10" name="notes" id="notes"><?=$row["notes"]?></textarea><br>
                 </div>
-                <input class="button" type="submit" value="POST" />
+                <input class="button" type="submit" value="Post" />
                 <a class="button" href="index.php">BACK</a>
                 <input type="hidden" name="token" value="<?=htmlspecialchars($_SESSION['token'])?>" />
                 <input type="hidden" name="article" value="<?=htmlspecialchars($article)?>">
