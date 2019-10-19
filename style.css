@@ -48,5 +48,5 @@ a:active {
     text-align: center !important;
 }
 .form-container{
-    direction: rtl;
+    text-align : left;
 }
