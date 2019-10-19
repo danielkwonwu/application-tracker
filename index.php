@@ -29,7 +29,7 @@
         </div>
         <div class="content">
             <?php
-            if (isset($_SESSION['user_id'])): ?>
+            if (!isset($_SESSION['user_id'])): ?>
             <img src = "career.jpg">
             <?php endif;
             require('sqlaccess.php');
