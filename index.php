@@ -10,7 +10,7 @@
 <body>
     <div class="page-wrapper">
         <div class="header">
-            <a class="link" href="index.php"><h1 class="title">AppTrac</h1></a>
+            <a class="logo" href="index.php"><h1 class="title">AppTrac</h1></a>
             <div class="user-info">
                 <?php
                 session_start();

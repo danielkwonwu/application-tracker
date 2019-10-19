@@ -18,7 +18,7 @@ if(!isset($_SESSION["user_id"]) || !isset($_SESSION["token"])){
 <body>
     <div class="page-wrapper">
         <div class="header">
-            <a class="link" href="index.php"><h1 class="title">NEWS</h1></a>
+            <a class="logo" href="index.php"><h1 class="title">AppTrac</h1></a>
             <div class="user-container">
                 <?php if (isset($_SESSION['user_id'])): ?>
                 <p class="welcome body">Welcome, <?=htmlspecialchars($_SESSION['user_id'])?></p>
