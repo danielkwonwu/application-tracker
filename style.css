@@ -49,5 +49,8 @@ a:active {
 }
 .form-container{
     width : 500px;
+    clear: both;
+}
+.form-container input{
     text-align : left;
 }
