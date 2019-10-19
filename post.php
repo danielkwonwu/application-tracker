@@ -38,8 +38,8 @@ if(!isset($_SESSION["user_id"]) || !isset($_SESSION["token"])){
                     <input class="text-input" type="text" name="company_name" id="company_name" /><br>
                     <label class="input-label" for="contact">Contact Information:</label>
                     <input class="text-input" type="text" name="contact" id="contact" /><br>
-                    <label class="input-label" for="notes">Notes:</label>
-                    <textarea form="apps" rows="20" name="notes" id="notes"></textarea><br>
+                    <label class="input-label" for="notes">Notes:</label><br>
+                    <textarea form="apps" rows="10" name="notes" id="notes"></textarea><br>
                 </div>
                 <input class="button" type="submit" value="POST" />
                 <a class="button" href="index.php">BACK</a>

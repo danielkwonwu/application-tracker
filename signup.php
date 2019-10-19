@@ -13,9 +13,9 @@
         <a class="link" href="index.php"><h1 class="title">AppTrac</h1></a>
             <div class="grid">
                 <label class="input-label" for="username">New username:</label>
-                <input class="text-input" type="text" name="username" id="username" />
+                <input class="text-input" type="text" name="username" id="username" /> <br>
                 <label class="input-label"  for="username">New password:</label>
-                <input class="text-input" type="password" name="password" id="password" />
+                <input class="text-input" type="password" name="password" id="password" /> <br>
                 <label class="input-label"  for="username">Confirm password:</label>
                 <input class="text-input" type="password" name="password2" id="password2" />
             </div>
