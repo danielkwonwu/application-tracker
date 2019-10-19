@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class = "header">
-        <a class="link" href="index.php"><h2 class="logo">AppTrac</h2></a>
+        <a class="link" href="index.php"><h1 class="logo">AppTrac</h1></a>
     </div>
     <form class="form-container" action="newuser.php" method="POST">
             <div class="grid">
