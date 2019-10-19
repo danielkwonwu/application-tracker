@@ -48,5 +48,6 @@ a:active {
     text-align: center !important;
 }
 .form-container{
+    width : 500px;
     text-align : left;
 }
