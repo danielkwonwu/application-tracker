@@ -31,7 +31,8 @@
         <div class="content">
             <?php
             require('sqlaccess.php');
-            $stmt = $mysqli->prepare("SELECT * FROM APPS JOIN USERS WHERE (USERS.user_key = APPS.owner_key) ORDER BY (APPS.time) ASC");
+            $stmt = $mysqli->prepare("SELECT * FROM APPS JOIN USERS WHERE (USERS.user_key = APPS.owner_key) AND USERS.user_id = ? ORDER BY (APPS.time) ASC");
+            $stmt->bind_param("s", $_SESSION["user_id"]);
             $stmt->execute();
             $result = $stmt->get_result();
             while ($row = $result->fetch_assoc()):
