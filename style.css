@@ -65,9 +65,9 @@ a:active {
     width : 800px;
     margin-left: auto;
     margin-right: auto;
-    line-height : 150%;
     text-align: left;
 }
 .app h2{
     text-align: center;
+    line-height : 150%;
 }
