@@ -30,7 +30,10 @@ if ($owner){
     $stmt = $mysqli->prepare("UPDATE APPS SET company_name = ?, contact = ?, notes = ? WHERE app_key = ?");
     $stmt->bind_param("sssi", $_SESSION["company_name"], $_SESSION["contact"], $_SESSION["notes"], $article);
     $stmt->execute();
-    header("Location: index.php");
+    //header("Location: index.php");
+    echo $_SESSION["company_name"];
+    echo $_SESSION["contact"];
+    echo $_SESSION["note"];
 }
 else{
     echo "[$article]failed to edit";
