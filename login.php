@@ -19,8 +19,8 @@
                 <label class="input-label"  for="username">Password:</label>
                 <input class="text-input" type="password" name="password" id="password" />
             </div>
-            <input class="button" type="submit" value="LOGIN" />
-            <a class="button" href="signup.php">SIGN UP</a>
+            <input class="button" type="submit" value="Sign In" />
+            <a class="button" href="signup.php">Sign Up</a>
             <?php if (!empty($_GET['error'])): 
             ?>
             <div class="error">
