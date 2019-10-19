@@ -32,4 +32,7 @@ if ($owner){
     $stmt->execute();
     header("Location: index.php");
 }
+else{
+    echo "failed to delete";
+}
 ?>
