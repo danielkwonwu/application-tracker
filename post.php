@@ -32,7 +32,7 @@ if(!isset($_SESSION["user_id"]) || !isset($_SESSION["token"])){
             </div>
         </div>
         <div class="content">
-            <form id="apps" class="app-writer" action="savepost.php" method="POST">
+            <form id="apps" class="form-container" action="savepost.php" method="POST">
                 <div class="grid">
                     <label class="input-label" for="company_name">Company Name:</label>
                     <input class="text-input" type="text" name="company_name" id="company_name" /><br>
