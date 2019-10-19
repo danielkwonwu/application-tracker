@@ -25,7 +25,7 @@ if ($result->num_rows == 1)
 {
     $row = $result->fetch_assoc();
     $stmt = $mysqli->prepare("INSERT INTO APPS (owner_key, company_name, notes, contact) VALUES (?, ?, ?, ?)");
-    $stmt->bind_param("isss", $row["user_key"], $_POST["post_title"], $_POST["post_content"], $_POST["contact"]);
+    $stmt->bind_param("isss", $row["user_key"], $_POST["company_name"], $_POST["notes"], $_POST["contact"]);
     $stmt->execute();
     header("Location: index.php");
 }
