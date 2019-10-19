@@ -50,8 +50,16 @@
                 <?php endif; ?>
                 <p class="subtitle">Notes : <?=htmlspecialchars($row["notes"])?> </p>
                 </div>
-                <a href = "edit.php?article=<?=$_GET["article"]?>">Edit</a>
-                <a href = "delete.php?article=<?=$_GET["article"]?>">Delete</a>
+                <form action="edit.php" method="POST">
+                    <input type="hidden" name="token" value="<?=htmlspecialchars($_SESSION["token"])?>">
+                    <input type="hidden" name="article" value="<?=htmlspecialchars($article)?>">
+                    <input type="submit" class="button" value="Edit">
+                </form>
+                <form action="delete.php" method="POST">
+                    <input type="hidden" name="token" value="<?=htmlspecialchars($_SESSION["token"])?>">
+                    <input type="hidden" name="article" value="<?=htmlspecialchars($article)?>">
+                    <input type="submit" class="button" value="Delete">
+                </form>
             <?php } ?>
             </div>
     </div>
