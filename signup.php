@@ -8,10 +8,12 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <h2>Sign in to view your applications.</h2>
-    <form class="form-container" action="newuser.php" method="POST">
+    <div class = "header">
         <a class="link" href="index.php"><h1 class="title">AppTrac</h1></a>
+    </div>
+    <form class="form-container" action="newuser.php" method="POST">
             <div class="grid">
+                <h2>Sign up to start tracking your applications.</h2>
                 <label class="input-label" for="username">New username:</label>
                 <input class="text-input" type="text" name="username" id="username" /> <br>
                 <label class="input-label"  for="username">New password:</label>
