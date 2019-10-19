@@ -27,7 +27,7 @@ while ($row = $result->fetch_assoc())
 }
 
 if ($owner){
-    $stmt = $mysqli->prepare("DELETE FROM posts WHERE (app_key = ?)");
+    $stmt = $mysqli->prepare("DELETE FROM APPS WHERE (app_key = ?)");
     $stmt->bind_param("i", $article);
     $stmt->execute();
     header("Location: index.php");
