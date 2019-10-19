@@ -8,9 +8,11 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <h2>Sign in to view your applications.</h2>
+    <div class = "header">
+    <a class="logo" href="index.php"><h1 class="title">AppTrac</h1></a>
+    </div>
     <form class="forms" action="logging.php" method="POST">
-            <a class="logo" href="index.php"><h1 class="title">AppTrac</h1></a>
+        <h2>Sign in to view your applications.</h2>
             <div class="grid">
                 <label class="input-label" for="username">Username:</label>
                 <input class="text-input" type="text" name="username" id="username" />
