@@ -11,7 +11,7 @@
     <div class = "header">
     <a class="logo" href="index.php"><h1 class="title">AppTrac</h1></a>
     </div>
-    <form class="forms" action="logging.php" method="POST">
+    <form class="form-container" action="logging.php" method="POST">
         <h2>Sign in to view your applications.</h2>
             <div class="grid">
                 <label class="input-label" for="username">Username:</label>

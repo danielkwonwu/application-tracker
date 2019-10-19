@@ -9,7 +9,7 @@
 </head>
 <body>
     <h2>Sign in to view your applications.</h2>
-    <form class="forms" action="newuser.php" method="POST">
+    <form class="form-container" action="newuser.php" method="POST">
         <a class="link" href="index.php"><h1 class="title">AppTrac</h1></a>
             <div class="grid">
                 <label class="input-label" for="username">New username:</label>

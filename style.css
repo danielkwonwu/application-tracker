@@ -44,18 +44,9 @@ a:active {
 .header {
     text-align: left;
 }
-.center{
-    width: 500px;
-    text-align: center;
-}
-.right{
-    width: 500px;
-    text-align: right;
-}
-.left{
-    width: 500px;
-    text-align: left;
-}
 .logo{
     text-align: center !important;
+}
+.form-container{
+    direction: rtl;
 }
