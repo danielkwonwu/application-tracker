@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class = "header">
-    <a class="logo" href="index.php"><h1 class="title">AppTrac</h1></a>
+    <a class="logo" href="index.php"><h2 class="title">AppTrac</h2></a>
     </div>
     <form class="form-container" action="logging.php" method="POST">
         <h2>Sign in to view your applications.</h2>
