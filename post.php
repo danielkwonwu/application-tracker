@@ -23,11 +23,11 @@ if(!isset($_SESSION["user_id"]) || !isset($_SESSION["token"])){
                 <?php if (isset($_SESSION['user_id'])): ?>
                 <p class="welcome">Welcome, <?=htmlspecialchars($_SESSION['user_id'])?></p>
                 <form action="logout.php" method="POST">
-                    <input class="user-button" type="submit" value="LOGOUT">
+                    <input class="button" type="submit" value="LOGOUT">
                 </form>
                 <?php else: ?>
                 <p class="welcome">Welcome, Guest</p>
-                <a class="user-button" href="login.php">LOGIN</a>
+                <a class="button" href="login.php">LOGIN</a>
                 <?php endif; ?>
             </div>
         </div>

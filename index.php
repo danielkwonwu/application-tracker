@@ -18,13 +18,13 @@
                 ?>
                 <p class="welcome">Welcome, <?=htmlspecialchars($_SESSION['user_id'])?></p>
                 <form action="logout.php" method="POST">
-                    <input class="user-button" type="submit" value="LOGOUT">
+                    <input class="button" type="submit" value="LOGOUT">
                 </form>
                 <a class="right button" href="post.php">Add Application</a>
                 <?php 
                 else: ?>
                 <p class="welcome">Log in to view your apps.</p>
-                <a class="user-button" href="login.php">LOGIN</a>
+                <a class="button" href="login.php">LOGIN</a>
                 <?php endif; ?>
             </div>
         </div>
