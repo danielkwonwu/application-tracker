@@ -62,9 +62,12 @@ a:active {
 }
 
 .app {
-    width : 600px;
+    width : 800px;
     margin-left: auto;
     margin-right: auto;
-    text-align: left;
     line-height : 150%;
+    text-align: left;
+}
+.app h2{
+    text-align: center;
 }
