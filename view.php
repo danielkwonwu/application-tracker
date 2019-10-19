@@ -34,6 +34,7 @@
             <h2 class="logo"><a class="button" href="login.php">Sign In</a> to view your apps.</h2>
             <?php endif;
             require('sqlaccess.php');
+            $article = $_GET["article"];
             $stmt = $mysqli->prepare("SELECT * FROM APPS WHERE app_key =?");
             $stmt->bind_param("s", $_GET["article"]);
             $stmt->execute();
