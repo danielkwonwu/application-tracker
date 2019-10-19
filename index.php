@@ -36,12 +36,12 @@
             while ($row = $result->fetch_assoc()):
             ?>
             <div class="post">
-                <a class="link" href="view.php?article=<?=htmlspecialchars($row["post_key"])?>"><h2 class="article-title"><?=htmlspecialchars($row["post_title"])?></h2></a>
-                <?php if (!empty($row["post_link"])): ?>
-                <a class="link" href="<?=htmlspecialchars($row["post_link"])?>"><p class="subtitle">Link to related article</p></a>
+                <a class="link" href="view.php?article=<?=htmlspecialchars($row["post_key"])?>"><h2 class="article-title"><?=htmlspecialchars($row["company_name"])?></h2></a>
+                <?php if (!empty($row["contact"])): ?>
+                <a class="link" href="<?=htmlspecialchars($row["contact"])?>"><p class="subtitle">Contact</p></a>
                 <?php endif; ?>
-                <p class="subtitle">Posted by <?=htmlspecialchars($row["user_id"])?> on  <?=htmlspecialchars(date('m/d/Y H:i:s', strtotime($row["post_time"])))?></p>
-                <p class="post-content body"><?=htmlspecialchars($row["post_content"])?></p>
+                <p class="subtitle">Posted by <?=htmlspecialchars($row["user_id"])?> on  <?=htmlspecialchars(date('m/d/Y H:i:s', strtotime($row["time"])))?></p>
+                <p class="post-content body"><?=htmlspecialchars($row["notes"])?></p>
             </div>
             <?php endwhile; ?>
         </div>

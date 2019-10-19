@@ -6,6 +6,7 @@ if (empty($_POST["company_name"]) || empty($_POST["contact"]))
     exit();
 }
 session_start();
+
 if(!isset($_SESSION["user_id"]) || !isset($_SESSION["token"])){
     header("Location: login.php");
 	exit();
