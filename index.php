@@ -31,7 +31,7 @@
             <?php
             if (!isset($_SESSION['user_id'])): ?>
             <img src = "career.jpg">
-            <p class="logo"><a class="button" href="login.php">Sign In</a> to view your apps.</p>
+            <h2 class="logo"><a class="button" href="login.php">Sign In</a> to view your apps.</h2>
             <?php endif;
             require('sqlaccess.php');
             $stmt = $mysqli->prepare("SELECT * FROM APPS JOIN USERS WHERE (USERS.user_key = APPS.owner_key) AND USERS.user_id = ? ORDER BY (APPS.time) ASC");
