@@ -32,14 +32,14 @@ if(!isset($_SESSION["user_id"]) || !isset($_SESSION["token"])){
             </div>
         </div>
         <div class="content">
-            <form id="writePost" class="form-container" action="savepost.php" method="POST">
+            <form id="apps" class="form-container" action="savepost.php" method="POST">
                 <div class="grid">
-                    <label class="input-label" for="post_title">Title:</label>
-                    <input class="text-input" type="text" name="post_title" id="post_title" />
-                    <label class="input-label" for="post_title">Link (optional):</label>
-                    <input class="text-input" type="text" name="post_link" id="post_link" />
-                    <label class="input-label" for="post_content">Commentary:</label>
-                    <textarea form="writePost" rows="20" name="post_content" id="post_content"></textarea>
+                    <label class="input-label" for="company_name">Company Name:</label>
+                    <input class="text-input" type="text" name="company_name" id="company_name" />
+                    <label class="input-label" for="contact">Contact Information:</label>
+                    <input class="text-input" type="text" name="contact" id="contact" />
+                    <label class="input-label" for="notes">Notes:</label>
+                    <textarea form="apps" rows="20" name="notes" id="notes"></textarea>
                 </div>
                 <input class="button" type="submit" value="POST" />
                 <a class="button" href="index.php">BACK</a>

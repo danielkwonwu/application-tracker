@@ -27,10 +27,10 @@
             </div>
         </div>
         <div class="content">
-            <a class="right button" href="writePost.php">POST NEW STORY</a>
+            <a class="right button" href="post.php">Add Application</a>
             <?php
             require('sqlaccess.php');
-            $stmt = $mysqli->prepare("SELECT * FROM posts JOIN users WHERE (USERS.user_key = APPS.owner_key) ORDER BY (APPS.time) ASC");
+            $stmt = $mysqli->prepare("SELECT * FROM APPS JOIN USERS WHERE (USERS.user_key = APPS.owner_key) ORDER BY (APPS.time) ASC");
             $stmt->execute();
             $result = $stmt->get_result();
             while ($row = $result->fetch_assoc()):
