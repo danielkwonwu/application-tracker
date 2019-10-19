@@ -28,12 +28,9 @@ while ($row = $result->fetch_assoc())
 
 if ($owner){
     $stmt = $mysqli->prepare("UPDATE APPS SET company_name = ?, contact = ?, notes = ? WHERE app_key = ?");
-    $stmt->bind_param("sssi", $_SESSION["company_name"], $_SESSION["contact"], $_SESSION["notes"], $article);
+    $stmt->bind_param("sssi", $_POST["company_name"], $_POST["contact"], $_POST["notes"], $article);
     $stmt->execute();
-    //header("Location: index.php");
-    echo $_SESSION["company_name"];
-    echo $_SESSION["contact"];
-    echo $_SESSION["notes"];
+    header("Location: index.php");
 }
 else{
     echo "[$article]failed to edit";
