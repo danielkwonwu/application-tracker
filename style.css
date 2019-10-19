@@ -8,7 +8,7 @@ body
     text-align: center;
 }
 
-button{
+.button{
     font-family: Arial, Helvetica, sans-serif;
     color:white;
     text-decoration: none;
