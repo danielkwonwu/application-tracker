@@ -71,7 +71,7 @@ if (!$owner){
                     <label class="input-label" for="contact">Contact Information:</label>
                     <input class="text-input" type="text" name="contact" id="contact" value = "<?=$row["contact"]?>" /><br>
                     <label class="input-label" for="notes">Notes:</label><br>
-                    <textarea form="apps" rows="10" name="notes" id="notes" value = "<?=$row["notes"]?>"></textarea><br>
+                    <textarea form="apps" rows="10" name="notes" id="notes"><?=$row["notes"]?></textarea><br>
                 </div>
                 <input class="button" type="submit" value="POST" />
                 <a class="button" href="index.php">BACK</a>
