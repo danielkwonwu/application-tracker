@@ -21,12 +21,12 @@ if(!isset($_SESSION["user_id"]) || !isset($_SESSION["token"])){
             <a class="logo" href="index.php"><h1 class="title">AppTrac</h1></a>
             <div class="user-container">
                 <?php if (isset($_SESSION['user_id'])): ?>
-                <p class="welcome body">Welcome, <?=htmlspecialchars($_SESSION['user_id'])?></p>
+                <p class="welcome">Welcome, <?=htmlspecialchars($_SESSION['user_id'])?></p>
                 <form action="logout.php" method="POST">
                     <input class="user-button" type="submit" value="LOGOUT">
                 </form>
                 <?php else: ?>
-                <p class="welcome body">Welcome, guest</p>
+                <p class="welcome">Welcome, Guest</p>
                 <a class="user-button" href="login.php">LOGIN</a>
                 <?php endif; ?>
             </div>

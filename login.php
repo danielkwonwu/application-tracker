@@ -20,7 +20,6 @@
             <input class="button" type="submit" value="LOGIN" />
             <a class="button" href="signup.php">SIGN UP</a>
             <?php if (!empty($_GET['error'])): 
-            //simple login form, print if errored.
             ?>
             <div class="error">
                 <?=htmlspecialchars($_GET['error']);?>

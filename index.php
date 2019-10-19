@@ -16,18 +16,19 @@
                 session_start();
                 if (isset($_SESSION['user_id'])):
                 ?>
-                <p class="welcome body">Welcome, <?=htmlspecialchars($_SESSION['user_id'])?></p>
+                <p class="welcome">Welcome, <?=htmlspecialchars($_SESSION['user_id'])?></p>
                 <form action="logout.php" method="POST">
                     <input class="user-button" type="submit" value="LOGOUT">
                 </form>
-                <?php else: ?>
-                <p class="welcome body">Welcome, guest</p>
+                <a class="right button" href="post.php">Add Application</a>
+                <?php 
+                else: ?>
+                <p class="welcome">Log in to view your apps.</p>
                 <a class="user-button" href="login.php">LOGIN</a>
                 <?php endif; ?>
             </div>
         </div>
         <div class="content">
-            <a class="right button" href="post.php">Add Application</a>
             <?php
             require('sqlaccess.php');
             $stmt = $mysqli->prepare("SELECT * FROM APPS JOIN USERS WHERE (USERS.user_key = APPS.owner_key) ORDER BY (APPS.time) ASC");
