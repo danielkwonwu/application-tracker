@@ -7,12 +7,22 @@ body
     margin: auto;
     text-align: center;
 }
-#login{
-    width: 500px;
+a:link {
+    text-decoration: none;
 }
-ul.files{
-    font-size: 12pt;
-    width: 300px;
+  
+a:visited {
+    text-decoration: none;
+}
+  
+a:hover {
+    text-decoration: underline;
+}
+  
+a:active {
+    text-decoration: underline;
+}
+.header {
     text-align: left;
 }
 .center{
@@ -31,18 +41,3 @@ form
 {
     border: 1px solid white;
 }
-a:link {
-    text-decoration: none;
-  }
-  
-  a:visited {
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  a:active {
-    text-decoration: underline;
-  }
