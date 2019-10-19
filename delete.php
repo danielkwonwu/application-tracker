@@ -33,6 +33,6 @@ if ($owner){
     header("Location: index.php");
 }
 else{
-    echo "failed to delete";
+    echo "[$article]failed to delete";
 }
 ?>
