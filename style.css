@@ -65,9 +65,7 @@ a:active {
     margin-left: auto;
     margin-right: auto;
     text-align: left;
-}
-.app h2{
-    line-height : 150%;
+    margin-bottom: 10px;
 }
 img{
     display: block;
