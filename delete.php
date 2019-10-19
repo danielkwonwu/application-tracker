@@ -26,7 +26,7 @@ if ($result->num_rows == 1)
 
 if ($owner){
     $stmt = $mysqli->prepare("DELETE FROM posts WHERE (app_key = ?)");
-    $stmt->bind_param("s", $_GET["article"]);
+    $stmt->bind_param("i", $_GET["article"]);
     $stmt->execute();
     header("Location: index.php");
 }
