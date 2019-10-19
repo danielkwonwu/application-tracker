@@ -46,7 +46,6 @@
                 <?php if (!empty($row["contact"])): ?>
                 <p class="subtitle">Contact Info : <?=htmlspecialchars($row["contact"])?> </p>
                 <?php endif; ?>
-                <p class="post-content body"><?=htmlspecialchars($row["notes"])?></p>
             </div>
             <?php endwhile; ?>
         </div>
