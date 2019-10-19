@@ -45,6 +45,13 @@
                 <p class="subtitle">Applied on <?=htmlspecialchars(date('m/d/Y H:i:s', strtotime($row["time"])))?></p>
                 <?php if (!empty($row["contact"])): ?>
                 <p class="subtitle">Contact Info : <?=htmlspecialchars($row["contact"])?> </p>
+                <?php
+                if ($row["notes"] != ""){
+                    ?>
+                    <p>Has notes...</p>
+                    <?php
+                }
+                ?>
                 <?php endif; ?>
             </div>
             <?php endwhile; ?>
