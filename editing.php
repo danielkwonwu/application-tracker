@@ -33,7 +33,7 @@ if ($owner){
     //header("Location: index.php");
     echo $_SESSION["company_name"];
     echo $_SESSION["contact"];
-    echo $_SESSION["note"];
+    echo $_SESSION["notes"];
 }
 else{
     echo "[$article]failed to edit";
