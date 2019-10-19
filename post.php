@@ -35,11 +35,11 @@ if(!isset($_SESSION["user_id"]) || !isset($_SESSION["token"])){
             <form id="apps" class="form-container" action="savepost.php" method="POST">
                 <div class="grid">
                     <label class="input-label" for="company_name">Company Name:</label>
-                    <input class="text-input" type="text" name="company_name" id="company_name" />
+                    <input class="text-input" type="text" name="company_name" id="company_name" /><br>
                     <label class="input-label" for="contact">Contact Information:</label>
-                    <input class="text-input" type="text" name="contact" id="contact" />
+                    <input class="text-input" type="text" name="contact" id="contact" /><br>
                     <label class="input-label" for="notes">Notes:</label>
-                    <textarea form="apps" rows="20" name="notes" id="notes"></textarea>
+                    <textarea form="apps" rows="20" name="notes" id="notes"></textarea><br>
                 </div>
                 <input class="button" type="submit" value="POST" />
                 <a class="button" href="index.php">BACK</a>

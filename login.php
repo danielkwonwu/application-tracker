@@ -15,12 +15,12 @@
         <h2>Sign in to view your applications.</h2>
             <div class="grid">
                 <label class="input-label" for="username">Username:</label>
-                <input class="text-input" type="text" name="username" id="username" />
+                <input class="text-input" type="text" name="username" id="username" /><br>
                 <label class="input-label"  for="username">Password:</label>
-                <input class="text-input" type="password" name="password" id="password" />
+                <input class="text-input" type="password" name="password" id="password" /><br>
             </div>
-            <input class="button" type="submit" value="Sign In" />
-            <a class="button" href="signup.php">Sign Up</a>
+            <input class="button" type="submit" value="Sign In" /> <br>
+            <a class="button" href="signup.php">Sign Up</a> <br>
             <?php if (!empty($_GET['error'])): 
             ?>
             <div class="error">
