@@ -52,10 +52,12 @@
                 </div>
                 <form action="edit.php?article=<?=$_GET["article"]?>" method="POST">
                     <input type="hidden" name="token" value="<?=htmlspecialchars($_SESSION["token"])?>">
+                    <input type="hidden" name="article" value="<?=htmlspecialchars($article)?>">
                     <input type="submit" class="button" value="Edit">
                 </form>
                 <form action="delete.php?article=<?=$_GET["article"]?>" method="POST">
                     <input type="hidden" name="token" value="<?=htmlspecialchars($_SESSION["token"])?>">
+                    <input type="hidden" name="article" value="<?=htmlspecialchars($article)?>">
                     <input type="submit" class="button" value="Delete">
                 </form>
             <?php } ?>
