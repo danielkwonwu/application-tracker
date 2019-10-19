@@ -50,6 +50,8 @@
                 <?php endif; ?>
                 <p class="subtitle">Notes : <?=htmlspecialchars($row["notes"])?> </p>
                 </div>
+                <a href = "edit.php?article=<?=$_GET["article"]?>">Edit</a>
+                <a href = "delete.php?article=<?=$_GET["article"]?>">Delete</a>
             <?php } ?>
             </div>
     </div>
