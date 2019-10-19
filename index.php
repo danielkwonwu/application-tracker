@@ -36,9 +36,9 @@
             while ($row = $result->fetch_assoc()):
             ?>
             <div class="post">
-                <a class="link" href="view.php?article=<?=htmlspecialchars($row["post_key"])?>"><h2 class="article-title"><?=htmlspecialchars($row["company_name"])?></h2></a>
+                <a class="link" href="view.php?article=<?=htmlspecialchars($row["app_key"])?>"><h2 class="article-title"><?=htmlspecialchars($row["company_name"])?></h2></a>
                 <?php if (!empty($row["contact"])): ?>
-                <a class="link" href="<?=htmlspecialchars($row["contact"])?>"><p class="subtitle">Contact</p></a>
+                <p class="subtitle">Contact Info : <?=htmlspecialchars($row["contact"])?> </p>
                 <?php endif; ?>
                 <p class="subtitle">Posted by <?=htmlspecialchars($row["user_id"])?> on  <?=htmlspecialchars(date('m/d/Y H:i:s', strtotime($row["time"])))?></p>
                 <p class="post-content body"><?=htmlspecialchars($row["notes"])?></p>
