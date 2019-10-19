@@ -40,12 +40,12 @@
             $result = $stmt->get_result();
             while ($row = $result->fetch_assoc()):
             ?>
-            <div class="post">
+            <div class="app">
                 <a class="link" href="view.php?article=<?=htmlspecialchars($row["app_key"])?>"><h2 class="article-title"><?=htmlspecialchars($row["company_name"])?></h2></a>
+                <p class="subtitle">Applied on <?=htmlspecialchars(date('m/d/Y H:i:s', strtotime($row["time"])))?></p>
                 <?php if (!empty($row["contact"])): ?>
                 <p class="subtitle">Contact Info : <?=htmlspecialchars($row["contact"])?> </p>
                 <?php endif; ?>
-                <p class="subtitle">Posted by <?=htmlspecialchars($row["user_id"])?> on  <?=htmlspecialchars(date('m/d/Y H:i:s', strtotime($row["time"])))?></p>
                 <p class="post-content body"><?=htmlspecialchars($row["notes"])?></p>
             </div>
             <?php endwhile; ?>
